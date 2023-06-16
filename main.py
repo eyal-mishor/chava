@@ -9,7 +9,7 @@ ai = AI(
         temperature=0.1,
     )
 
-with open(sys.argv[1], 'r') as file:
+with open(sys.argv[1], 'r', encoding="utf8") as file:
     chava_code = file.read()
 
 ai.chat(chava_code)
