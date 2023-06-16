@@ -13,7 +13,8 @@ class AI:
         messages = [
         {"role": "system", "content": "you're a transpiler from Chava to Java. Chava is a Hebrew flavor of Java. "
         "It uses Hebrew words for all keywords, class names, functions and parameters"
-        "You need to translate all of these back to English"},
+        "You need to translate all of these back to English"
+        "translate בןאל to public"},
         {"role": "user", "content": prompt}
         ]
 
