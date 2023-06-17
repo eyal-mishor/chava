@@ -3,9 +3,13 @@ import openai
 class AI:
     def __init__(self, **kwargs):
         self.kwargs = kwargs
+        self.hebrew_to_english = {}
 
         with open("translations.json", 'r', encoding="utf8") as file:
-            self.dictionary = file.read()
+            self.english_to_hebrew = json.load(file)['english_to_hebrew']
+
+        for key, value in self.english_to_hebrew.items():
+            self.hebrew_to_english[value] = key
 
         try:
             openai.Model.retrieve("gpt-4")
@@ -17,7 +21,7 @@ class AI:
         {"role": "system", "content": "you're a transpiler from Chava to Java and vice versa. Chava is a Hebrew flavor of Java. "
         "It uses Hebrew words for all keywords, class names, functions and parameters"
         "When you're given a file name and its content you need to identify its language by the file extension and translate it accordingly"
-        f"when translating keywords use the following dictionary:\n{self.dictionary}"
+        f"when translating keywords use the following dictionary:\n{self.english_to_hebrew}"
         "Your output must be a valid Chava or Java code. Add the filename as a comment"
         "add nothing else to the output"},
         {"role": "user", "content": f"{filename}:\n{content}"}
