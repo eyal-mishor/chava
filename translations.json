@@ -1,5 +1,4 @@
 {
-  "english_to_hebrew": {
     "String": "חוט",
     "integer": "שלם",
     "double": "חלקי",
@@ -28,5 +27,4 @@
     "main": "ראשי",
     "Math": "מתמטיקה",
     "random": "מוגרל"
-  }
 }
