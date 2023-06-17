@@ -14,7 +14,7 @@ class AI:
         {"role": "system", "content": "you're a transpiler from Chava to Java. Chava is a Hebrew flavor of Java. "
         "It uses Hebrew words for all keywords, class names, functions and parameters"
         "You need to translate all of these back to English"
-        "translate בןאל to public"},
+        "use translations.json to translate"},
         {"role": "user", "content": prompt}
         ]
 
