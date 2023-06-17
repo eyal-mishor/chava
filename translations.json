@@ -1,5 +1,4 @@
 {
-  "english_to_hebrew": {
     "String": "חוט",
     "integer": "שלם",
     "double": "חלקי",
@@ -28,35 +27,4 @@
     "main": "ראשי",
     "Math": "מתמטיקה",
     "random": "מוגרל"
-  },
-  "hebrew_to_english": {
-    "חוט": "String",
-    "שלם": "integer",
-    "חלקי": "double",
-    "מערך": "array",
-    "פונקציה": "function",
-    "אם": "if",
-    "עבור": "for",
-    "כלעודבלבב": "while",
-    "הדפס": "print",
-    "הדפסלן": "println",
-    "קלט": "input",
-    "אמת": "true",
-    "שקר": "false",
-    "פתקהחלפה": "return",
-    "שיעור": "class",
-    "פרמטר": "parameter",
-    "וסטטיק": "static",
-    "ייבא": "import",
-    "קובץ": "file",
-    "מחיקה": "delete",
-    "שגיאה": "error",
-    "ניהול_חריגות": "exception_handling",
-    "החוצה": "out",
-    "מערכת": "System",
-    "בןאל": "public",
-    "ראשי": "main",
-    "מתמטיקה": "Math",
-    "מוגרל": "random"
-  }
 }
